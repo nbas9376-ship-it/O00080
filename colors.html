@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجهة الألوان والبرامج</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h2>التحكم في خلفية الصفحة</h2>
+        <div class="controls">
+            <input type="color" id="colorPicker" value="#e3f2fd">
+            <button onclick="changeBg()">تغيير اللون</button>
+            <button onclick="addColor()">إضافة للقائمة</button>
+            <select id="colorList">
+                <option>الألوان المحفوظة</option>
+            </select>
+        </div>
+
+        <h2>الحزم الرياضية</h2>
+        <select id="mathPackages">
+            <option value="">اختر حزمة رياضية</option>
+            <option value="matlab">MATLAB</option>
+            <option value="mathematica">Mathematica</option>
+            <option value="maple">Maple</option>
+            <option value="spss">SPSS</option>
+            <option value="geogebra">GeoGebra</option>
+        </select>
+        <div id="packageDesc"></div>
+        
+        <br><a href="index.html">الرجوع للرئيسية</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
